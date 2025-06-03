@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Finder</title>
+    <link rel="stylesheet" href="src/styles/Vars.css">
+    <link rel="stylesheet" href="src/styles/Globals.css">
+    <link rel="stylesheet" href="src/styles/LanguageSelector.css">
+    <link rel="stylesheet" href="src/styles/RepositoryCards.css">
+    <link rel="stylesheet" href="src/styles/LoadingSpinner.css">
+    <link rel="stylesheet" href="src/styles/Error.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>🔍 GitHub Repository Finder</h1>
+            <p>Descubre repositorios aleatorios por lenguaje de programación</p>
+        </header>
+        
+        <main class="main-content">
+            <div id="language-selector-container"></div>
+            <div id="loading-container"></div>
+            <div id="error-container"></div>
+            <div id="repository-container"></div>
+        </main>
+        
+        <footer style="text-align: center; padding: 1rem; color: var(--text-secondary); border-top: 1px solid var(--border-color);">
+            <p>Powered by GitHub API | Hecho con ❤️ y JavaScript</p>
+        </footer>
+    </div>
+    
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
